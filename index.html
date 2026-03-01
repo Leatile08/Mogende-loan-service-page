@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+     img {
+      width: 100px; 
+      border: 10px;
+      float: left; 
+      margin-right:20px;
+     } 
+      body{
+      background-image: url(images/background.jpg);
+     } 
+     header{
+        display: flex;
+        align-items: center;
+        background-color: rgb(229, 235, 235);
+        width: 1oo%;
+        height: 50px;
+        border-radius: 15px;
+        box-shadow:0 2px 5px rgba(0,0,0.1);
+     }
+     p{
+      color: #020202;
+     }
+     footer{
+      background-color: rgb(32, 35, 35);
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      left: 0;
+      right: 0;
+     }
+     body{
+      background-image: image/;
+      background-size:cover;
+      background-position:center;
+     }
+     /* Layout: content (left) + sidebar (right) */
+.container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 20px 16px;
+}
+
+/* Left column */
+.content {
+  flex: 1 1 auto;
+  background: rgba(235, 230, 230, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Right column */
+.sidebar {
+  width: 260px;
+  background: rgb(32, 35, 35);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+.sidebar h2 { margin: 0 0 10px; font-size: 1.1rem;color: #e5e7eb; }
+.sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #f7f3f3;
+  background: #b9b7b0fa;
+  border: 1px solid #bbbcc0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: background .15s ease, border-color .15s ease;
+}
+.sidebar a:hover { background: #496986; border-color: #a7a9ac; }
+
+/* (Optional) make it stack neatly on small screens */
+@media (max-width: 780px) {
+  .container { flex-direction: column; }
+  .sidebar { width: 100%; }
+}
+
+@media(max-width:780px){
+  .container{flex-direction: column;}
+  .sidebar{width: 100%;}
+}
+     
+    </style>
+    
+ </head> 
+ <body>
+    <header>
+        <div class="logo">
+            <img src="images/Mogende loan service logo.png" alt="MLS logo">
+        </div>
+      </header>
+      <!--MAIN LAYOUT-->
+      <div class="container">
+         <!--LEFT: your paragraph/content -->
+         <main class="content">
+            <p>At Mogende Loan Services, we understand that access to reliable financing can make all the difference in achieving your goals. Whether you’re looking to grow your business, invest in your future, or cover personal expenses, we provide flexible loan solutions tailored to your needs.</p>
+            <!-- Add more content here -->
+         </main>
+         <!--RIGHT: sidebar menu -->
+         <aside class="sidebar" aria-label="Main menu">
+            <h2>Menu</h2>
+             <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="Product page.html">Product Page</a></li>
+           <li><a href="Application Form.html">Application form</a></li>
+           <li><a href="About us.html">About MLS</a></li>
+           <li><a href="Contact Page.html">Contact</a></li>
+           <li><a href="FAQ Page.html">FAQ</a></li>  
+         </ul>
+         </aside>
+      </div>
+   <footer>
+      <p>&copy; 2025 Your Name</p>
+   </footer>
+ </body>  
+</html>
