@@ -24,16 +24,16 @@
             left: 50px; 
             }
             header{
-            background-color: #767a7a;
+            background-color: #ebefef;
             padding: 20px;
             text-align: center;
             border-radius: 0 0 15px 15px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             }
-            
+            /* TABLE */
             table {
-            width: 95%;
-            margin: 0 auto 40px auto;
+            width: 100%;
+            margin top: 20px;
             border-color:black ;
             background: white;
             border-radius: 8px;
@@ -48,12 +48,50 @@
             }
             
             th {
-            background: rgba(151, 146, 146, 0.9);
+            background: rgba(39, 36, 36, 0.9);
             color: white;
             font-size: 18px;
             }
+            /* Main layout: content left + sidebar right */
+            
+            /* Sidebar */
+            .sidebar {
+            width: 260px;
+            background: rgb(32, 35, 35);
+            border-radius: 12px;
+            padding: 16px;
+            color: white;
+            }
+            .sidebar h2 { margin: 0 0 10px; font-size: 1.1rem;color: #e5e7eb; }
+            .sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+            .sidebar a {
+             display: block;
+            text-decoration: none;
+            color: #f7f3f3;
+            background:#496986 ;
+            border: 1px solid #bbbcc0;
+            padding: 10px 12px;
+            border-radius: 10px;
+            transition: background .15s ease, border-color .15s ease;
+            }
+            .sidebar a:hover { background: #c5c8ca; border-color: #a7a9ac; }
+            /* LEFT CONTENT AREA */
+            .content {
+                flex: 1;  
+                background-color: rgba(151, 146, 146, 0.9);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 
+            }
+            .container {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            padding: 20px;
+            }
 
+            
         </style>
 
     </head>
@@ -61,8 +99,12 @@
         <header>
             <h1>Agent Directory</h1>
         </header>
-        <div class="table-container">
-            <table id="agentTable">
+    <!--MAIN LAYOUT-->
+    <div class="container">
+        <!--LEFT:TABLE CONTENT-->
+        <main class="content">
+        <h2>Agent Directory</h2>
+        <table id="agentTable">
                <tr>
                <th>Agent Name</th>
                <th>Contact</th>
@@ -83,7 +125,22 @@
                <td>+267 74 728 922</td>
                <td>Maun</td>
                </tr>
-            </table>
-        </div>
+        </table>
+        </main>
+    <!--RIGHT:SIDEBAR-->
+    <aside class="sidebar" aria-label="Main menu">
+        <h2>Menu</h2>
+             <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="Product page.html">Product Page</a></li>
+           <li><a href="Application Form.html">Application form</a></li>
+           <li><a href="About us.html">About MLS</a></li>
+           <li><a href="Contact Page.html">Contact</a></li>
+           <li><a href="FAQ Page.html">FAQ</a></li> 
+           <li><a href="table.html">Agent Directory</a></li> 
+             </ul>
+    </aside>
+    </div>
+        
     </body>
 </html>

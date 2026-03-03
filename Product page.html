@@ -25,6 +25,10 @@
             font-size: 2em;
             color: #030303;
         }
+        /* MAIN FLEX LAYOUT */
+        .page-wrapper{
+            display: flex;
+        }
         .container { 
             background-color: rgba(255, 255, 255, 0.9);
             margin: 40px auto; 
@@ -49,7 +53,36 @@
             font-weight: bold; 
             margin-top: 40px; 
         }
+        
+        .sidebar {
+            width: 260px;
+            background: rgb(32, 35, 35);
+            border-radius: 12px;
+            padding: 16px;
+            color: white;
+            }
+            .sidebar h2 { margin: 0 0 10px; font-size: 1.1rem;color: #e5e7eb; }
+            .sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+            .sidebar a {
+             display: block;
+            text-decoration: none;
+            color: #f7f3f3;
+            background: #496986;
+            border: 1px solid #bbbcc0;
+            padding: 10px 12px;
+            border-radius: 10px;
+            transition: background .15s ease, border-color .15s ease;
+            }
+            .sidebar a:hover { background: #787b7d; border-color: #a7a9ac; }
+            /* LEFT CONTENT AREA */
+            .content {
+                flex: 1;  
+                background-color: rgba(151, 146, 146, 0.9);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 
+            }
 
     </style>
 </head>
@@ -57,24 +90,40 @@
     <header>
         <h1>Loan Products</h1>
     </header>
-    <div class="container"> 
-        <div class="loan-section"> 
-            <h2>Personal Loan</h2> 
-            <p>Fixed or variable options available.</p> 
-            <p>Flexible loans for your personal needs at 30% interest rate. Starts from as little as P200 to P5000.</p> 
-        </div> 
-        <div class="loan-section"> 
-            <h2>Business Loan</h2> 
-            <p>Finance solutions to help grow your business.</p> 
-        </div> 
-        <div class="loan-section"> 
-            <h2>Student Loan</h2> 
-            <p>Affordable loans for your education.</p> 
-        </div> 
-        <div class="contact"> 
-            <p>For more info, contact one of our agents.</p> 
-        </div> 
-    </div>
-       
+    <!-- MAIN FLEX LAYOUT -->
+     <div class="page-wrapper">
+        <!-- LEFT: PRODUCT CONTENT -->
+         <div class="container"> 
+            <div class="loan-section"> 
+              <h2>Personal Loan</h2> 
+              <p>Fixed or variable options available.</p> 
+              <p>Flexible loans for your personal needs at 30% interest rate. Starts from as little as P200 to P5000.</p> 
+            </div> 
+            <div class="loan-section"> 
+              <h2>Business Loan</h2> 
+              <p>Finance solutions to help grow your business.</p> 
+            </div> 
+            <div class="loan-section"> 
+              <h2>Student Loan</h2> 
+              <p>Affordable loans for your education.</p> 
+            </div> 
+            <div class="contact"> 
+              <p>For more info, contact one of our agents.</p> 
+            </div> 
+         </div>
+         <!-- RIGHT: SIDEBAR MENU -->
+          <aside class="sidebar" aria-label="Main menu">
+            <h2>Menu</h2>
+             <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="Product page.html">Product Page</a></li>
+           <li><a href="Application Form.html">Application form</a></li>
+           <li><a href="About us.html">About MLS</a></li>
+           <li><a href="Contact Page.html">Contact</a></li>
+           <li><a href="FAQ Page.html">FAQ</a></li> 
+           <li><a href="table.html">Agent Directory</a></li> 
+             </ul>
+          </aside>
+     </div>
 </body>
 </html>

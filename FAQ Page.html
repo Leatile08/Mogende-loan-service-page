@@ -26,31 +26,83 @@
             text-align: center;
             border-radius: 0 0 15px 15px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+          }
            footer{
-      background-color: rgb(32, 35, 35);
-      position: fixed;
-      bottom: 0;
-      text-align: center;
-      left: 0;
-      right: 0;}
+            background-color: rgb(32, 35, 35);
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            left: 0;
+            right: 0;
+          }
+          .sidebar {
+            width: 260px;
+            background: rgb(32, 35, 35);
+            border-radius: 12px;
+            padding: 16px;
+            color: white;
+            }
+            .sidebar h2 { margin: 0 0 10px; font-size: 1.1rem;color: #e5e7eb; }
+            .sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+            .sidebar a {
+             display: block;
+            text-decoration: none;
+            color: #f7f3f3;
+            background: #496986;
+            border: 1px solid #bbbcc0;
+            padding: 10px 12px;
+            border-radius: 10px;
+            transition: background .15s ease, border-color .15s ease;
+            }
+            .sidebar a:hover { background: #696f75; border-color: #a7a9ac; }
+            /* LEFT CONTENT AREA */
+            .content {
+                flex: 1;  
+                background-color: rgba(151, 146, 146, 0.9);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+            }
+            .page-wrapper{
+                display: flex;
+                gap: 24px;
+                align-items: flex-start;
+                padding: 20px;
+            }
         </style>
     </head>
     <body>
         <header>
           <h1>Frequently Asked Questions</h1>  
         </header>
-        <div class="container">
-          <h2>What types of loans do you offer?</h2>
-          <p>We provide Personal Loans, Business Loans, and Student Loans tailored to meet different financial needs</p>
-          <h2>How long does it take to get approved?</h2>
-          <p>2-3 business days once all required documents are submitted and vetted</p>
-          <h2>What documents are required?</h2>
-          <p>-Proof of income</p>
-          <p>-Collateral documents</p>
-          <p>-Student ID</p>
-          <P>-Certified ID copy</P>
-        </div>
+        <!--MAIN FLEX LAYOUT-->
+        <div class="page-wrapper">
+        <!--LEFT:FAQ CONTENT-->
+          <div class="container">
+             <h2>What types of loans do you offer?</h2>
+             <p>We provide Personal Loans, Business Loans, and Student Loans tailored to meet different financial needs</p>
+             <h2>How long does it take to get approved?</h2>
+             <p>2-3 business days once all required documents are submitted and vetted</p>
+             <h2>What documents are required?</h2>
+             <p>-Proof of income</p>
+             <p>-Collateral documents</p>
+             <p>-Student ID</p>
+             <P>-Certified ID copy</P>
+          </div>
+        <!--RIGHT:SIDEBAR MENU-->
+          <aside class="sidebar" aria-label="Main menu">
+             <h2>Menu</h2>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="Product page.html">Product Page</a></li>
+                  <li><a href="Application Form.html">Application form</a></li>
+                  <li><a href="About us.html">About MLS</a></li>
+                  <li><a href="Contact Page.html">Contact</a></li>
+                  <li><a href="FAQ Page.html">FAQ</a></li> 
+                  <li><a href="table.html">Agent Directory</a></li> 
+                </ul>
+          </aside>
         <footer>
             <p>&copy; 2025 Mogende Loan Services</p>
         </footer>

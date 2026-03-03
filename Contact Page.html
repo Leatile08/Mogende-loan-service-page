@@ -5,14 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Contact Us-Mogende Loan Services</title>
         <style>
-            footer{
-      background-color: rgb(32, 35, 35);
-      position: fixed;
-      bottom: 0;
-      text-align: center;
-      left: 0;
-      right: 0;}
-      .container { 
+        footer{
+           background-color: rgb(32, 35, 35);
+           position: fixed;
+           bottom: 0;
+           text-align: center;
+           left: 0;
+           right: 0;}
+        /* Contact content box */
+        .container { 
+            flex: 1;
             background-color: rgba(255, 255, 255, 0.9);
             margin: 40px auto; 
             padding: 30px; 
@@ -35,7 +37,7 @@
             text-align: center;
             border-radius: 0 0 15px 15px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
-        /* Right column */
+        /* Sidebar */
         .sidebar {
             width: 260px;
             background: rgb(32, 35, 35);
@@ -49,13 +51,19 @@
             display: block;
             text-decoration: none;
             color: #f7f3f3;
-            background: #b9b7b0fa;
+            background:#496986 ;
             border: 1px solid #bbbcc0;
             padding: 10px 12px;
             border-radius: 10px;
             transition: background .15s ease, border-color .15s ease;
         }
-        .sidebar a:hover { background: #496986; border-color: #a7a9ac; }
+        .sidebar a:hover { background: #666d75; border-color: #a7a9ac; }
+        /* MAIN FLEX LAYOUT */
+        .page-wrapper {
+        display: flex;
+        gap: 24px;
+        padding: 20px;
+        }
         
         /* (Optional) make it stack neatly on small screens */
         </style>
@@ -64,26 +72,31 @@
         <header>
             <h1>Contact Us</h1>
         </header>
-        <div class="container">
+        <!-- MAIN FLEX LAYOUT -->
+         <Div class="page-wrapper">
+            <!-- LEFT: CONTACT INFO -->
+             <div class="container">
             <h2>We'd love to hear from you</h2>
             <p>Whether you have questions about our loan products, need assistance with an application, or simply want to learn more, our team is here to help.</p>
             <h3>Contact Details</h3>
             <p><strong>Phone:</strong>+267 78 394 354</p>
             <p><strong>Email:</strong>leatilemogende@gmail.com</p>
             <p><strong>Address:</strong>Plot 123, Tlokweng, Botswana</p>
-        </div>
-        <!--RIGHT: sidebar menu -->
-         <aside class="sidebar" aria-label="Main menu">
-            <h2>Menu</h2>
+           </div>
+           <!--RIGHT: sidebar menu -->
+             <aside class="sidebar" aria-label="Main menu">
+              <h2>Menu</h2>
              <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="Product page.html">Product Page</a></li>
-           <li><a href="Application Form.html">Application form</a></li>
-           <li><a href="About us.html">About MLS</a></li>
-           <li><a href="Contact Page.html">Contact</a></li>
-           <li><a href="FAQ Page.html">FAQ</a></li>  
-         </ul>
-         </aside>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Product page.html">Product Page</a></li>
+              <li><a href="Application Form.html">Application form</a></li>
+              <li><a href="About us.html">About MLS</a></li>
+              <li><a href="Contact Page.html">Contact</a></li>
+              <li><a href="FAQ Page.html">FAQ</a></li>  
+              <li><a href="table.html">Agent Directory</a></li>
+             </ul>
+             </aside>
+         </Div>
         <footer>
             <p>&copy; 2025 Mogende Loan Services</p>
         </footer>

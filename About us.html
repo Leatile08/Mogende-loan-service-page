@@ -32,25 +32,77 @@
       text-align: center;
       left: 0;
       right: 0;}
+      .sidebar {
+            width: 260px;
+            background: rgb(32, 35, 35);
+            border-radius: 12px;
+            padding: 16px;
+            color: white;
+            }
+            .sidebar h2 { margin: 0 0 10px; font-size: 1.1rem;color: #e5e7eb; }
+            .sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+            .sidebar a {
+             display: block;
+            text-decoration: none;
+            color: #f7f3f3;
+            background: #496986;
+            border: 1px solid #bbbcc0;
+            padding: 10px 12px;
+            border-radius: 10px;
+            transition: background .15s ease, border-color .15s ease;
+            }
+            .sidebar a:hover { background: #64696d; border-color: #a7a9ac; }
+            /* LEFT CONTENT AREA */
+            .content {
+                flex: 1;  
+                background-color: rgba(151, 146, 146, 0.9);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+            }
+            .page-wrapper{
+                display: flex;
+                gap: 24px;
+                align-items: flex-start;
+                padding: 20px;
+            }
         </style>
     </head>
     <body>
       <HEader>
         <H1>About MLS</H1>
       </HEader> 
-      <div class="container">
-        <h2>Our Story</h2>
-        <p>Mogende Loan Services was founded with a simple vision: to make financing accessible, transparent, and supportive for individuals, students, and businesses. Over the years, we’ve grown from a small local provider into a trusted partner for clients across Botswana and beyond. Our journey has been shaped by listening to our customers, understanding their challenges, and tailoring solutions that empower them to achieve their goals.</p>
-        <h2>Our Mission</h2>
-        <p>Our mission is to provide reliable, flexible, and affordable loan products that help people unlock opportunities. Whether it’s funding education, expanding a business, or managing personal needs, we are committed to offering financial solutions that build confidence and create lasting impact.</p>
-        <h2>Our Values</h2>
-        <p>Integrity – We operate with honesty and transparency in every transaction.</p>
-        <p>Customer-Centricity – Your needs guide our services; we put people first.</p>
-        <p>Innovation – We continuously improve our products to meet evolving financial demands.</p>
-        <p>Community Impact – We believe in contributing to the growth and prosperity of the communities we serve.</p>
-        <h2>Years of Experience</h2>
-        <p>With over 5 years of experience in the financial services industry, Mogende Loan Services has built a reputation for professionalism, trust, and excellence. Our team brings deep expertise and a passion for helping clients succeed, ensuring that every loan is more than just financing — it’s a step toward a brighter future.</p>
-      </div> 
+      <!--MAIN FLEX LAYOUT-->
+      <div class="page-wrapper">
+        <!--LEFT:About content-->
+           <div class="container">
+             <h2>Our Story</h2>
+             <p>Mogende Loan Services was founded with a simple vision: to make financing accessible, transparent, and supportive for individuals, students, and businesses. Over the years, we’ve grown from a small local provider into a trusted partner for clients across Botswana and beyond. Our journey has been shaped by listening to our customers, understanding their challenges, and tailoring solutions that empower them to achieve their goals.</p>
+             <h2>Our Mission</h2>
+             <p>Our mission is to provide reliable, flexible, and affordable loan products that help people unlock opportunities. Whether it’s funding education, expanding a business, or managing personal needs, we are committed to offering financial solutions that build confidence and create lasting impact.</p>
+             <h2>Our Values</h2>
+             <p>Integrity – We operate with honesty and transparency in every transaction.</p>
+             <p>Customer-Centricity – Your needs guide our services; we put people first.</p>
+             <p>Innovation – We continuously improve our products to meet evolving financial demands.</p>
+             <p>Community Impact – We believe in contributing to the growth and prosperity of the communities we serve.</p>
+             <h2>Years of Experience</h2>
+             <p>With over 5 years of experience in the financial services industry, Mogende Loan Services has built a reputation for professionalism, trust, and excellence. Our team brings deep expertise and a passion for helping clients succeed, ensuring that every loan is more than just financing — it’s a step toward a brighter future.</p>
+           </div> 
+        <!--RIGHT:SIDEBAR MENU-->
+           <aside class="sidebar" aria-label="Main menu">
+             <h2>Menu</h2>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="Product page.html">Product Page</a></li>
+                         <li><a href="Application Form.html">Application form</a></li>
+                         <li><a href="About us.html">About MLS</a></li>
+                         <li><a href="Contact Page.html">Contact</a></li>
+                         <li><a href="FAQ Page.html">FAQ</a></li> 
+                         <li><a href="table.html">Agent Directory</a></li> 
+                    </ul>
+           </aside>
+      </div>
       <footer>
             <p>&copy; 2025 Mogende Loan Services</p>
       </footer>

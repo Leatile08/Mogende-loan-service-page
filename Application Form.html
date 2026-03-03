@@ -104,56 +104,114 @@
         .actions{ justify-content: stretch; }
         .actions button{ flex: 1; }
         }
+        .sidebar {
+            width: 260px;
+            background: rgb(32, 35, 35);
+            border-radius: 12px;
+            padding: 16px;
+            color: white;
+            }
+            .sidebar h2 { margin: 0 0 10px; font-size: 1.1rem;color: #e5e7eb; }
+            .sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+            .sidebar a {
+             display: block;
+            text-decoration: none;
+            color: #f7f3f3;
+            background: #496986;
+            border: 1px solid #bbbcc0;
+            padding: 10px 12px;
+            border-radius: 10px;
+            transition: background .15s ease, border-color .15s ease;
+            }
+            .sidebar a:hover { background: #666b70; border-color: #a7a9ac; }
+            /* LEFT CONTENT AREA */
+            .content {
+                flex: 1;  
+                background-color: rgba(151, 146, 146, 0.9);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+            }
+            .container {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            padding: 20px;
+            }
+            .page-wrapper{
+                display: flex;
+                gap: 24px;
+                align-items: flex-start;
+                padding: 20px;
+            }
         </style>
     </head>
     <body>
         <header>
             <h1>Application Form</h1>
         </header>
-        <div class="container">
-            <!--Add action/method if you are posting to a server-->
-            <form>
-                <div>
-                  <label for="fname">First name:</label><br>
-                  <input type="text" id="fname" name="fname" value=""><br>  
-                </div>
-                <div>
-                  <label for="lname">Last name:</label><br>
-                  <input type="text" id="lname" name="lname" value="">  
-                </div>
-                <div>
-                   <label for="estatus">Employment Status:</label><br>
-                   <select id="estatus" name="estatus" required>
-                   <option value="" disabled selected>Select status</option>
-                   <option>Employed</option>
-                   <option>Self-employed</option>
-                   <option>Student</option>
-                   <option>Unemployed</option>
-                   </select>
-                </div>
-                <div>
-                   <label for="employer">Employer:</label><br>
-                   <input type="text" id="employer" name="employer" value=""> 
-                   <small class="hint">If unemployed, type "N/A".</small>
-                </div>
-                <div>
-                   <label for="sincome">Source of Income</label><br>
-                   <input type="text" id="sincome" name="sincome" value="">
-                </div>
-                <div>
-                   <label for="mincome">Monthly Income</label><br>
-                   <input type="text" id="mincome" name="mincome" value=""> 
-                </div>
-                <DIV>
-                    <label for="dproduct">Desired Product</label><br>
-                    <input type="text" id="dproduct" name="dproduct"value="">
-                    <!-- Actions -->
-                    <div class="actions full">
-                        <button type="reset" class="btn-ghost">Reset</button>
-                        <button type="submit" class="btn-primary">Submit Application</button>
+        <!--MAIN FLEX LAYOUT-->
+        <div class="page-wrapper">
+            <!-- LEFT: FORM CONTENT-->
+             <div class="container">
+             <!--Add action/method if you are posting to a server-->
+                <form>
+                    <div>
+                      <label for="fname">First name:</label><br>
+                      <input type="text" id="fname" name="fname" value=""><br>  
                     </div>
-                </DIV>
-            </form>
+                    <div>
+                       <label for="lname">Last name:</label><br>
+                       <input type="text" id="lname" name="lname" value="">  
+                    </div>
+                    <div>
+                       <label for="estatus">Employment Status:</label><br>
+                       <select id="estatus" name="estatus" required>
+                       <option value="" disabled selected>Select status</option>
+                       <option>Employed</option>
+                       <option>Self-employed</option>
+                       <option>Student</option>
+                       <option>Unemployed</option>
+                       </select>
+                    </div>
+                    <div>
+                       <label for="employer">Employer:</label><br>
+                       <input type="text" id="employer" name="employer" value=""> 
+                       <small class="hint">If unemployed, type "N/A".</small>
+                    </div>
+                    <div>
+                       <label for="sincome">Source of Income</label><br>
+                       <input type="text" id="sincome" name="sincome" value="">
+                    </div>
+                    <div>
+                       <label for="mincome">Monthly Income</label><br>
+                       <input type="text" id="mincome" name="mincome" value=""> 
+                    </div>
+                    <DIV>
+                        <label for="dproduct">Desired Product</label><br>
+                        <input type="text" id="dproduct" name="dproduct"value="">
+                        <!-- Actions -->
+                        <div class="actions full">
+                           <button type="reset" class="btn-ghost">Reset</button>
+                           <button type="submit" class="btn-primary">Submit Application</button>
+                        </div>
+                    </DIV>
+                </form>
+             </div>
+             <!--RIGHT:SIDEBAR MENU-->
+            <aside class="sidebar" aria-label="Main menu">
+                <h2>Menu</h2>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="Product page.html">Product Page</a></li>
+                         <li><a href="Application Form.html">Application form</a></li>
+                         <li><a href="About us.html">About MLS</a></li>
+                         <li><a href="Contact Page.html">Contact</a></li>
+                         <li><a href="FAQ Page.html">FAQ</a></li> 
+                         <li><a href="table.html">Agent Directory</a></li> 
+                    </ul>
+            </aside>
         </div>
         <footer>
             <p>&copy; 2025 Mogende Loan Services</p>
