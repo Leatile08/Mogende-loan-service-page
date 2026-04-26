@@ -1,111 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Agent Directory</title>
-        <!-- Bootstrap CSS --> 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-        <style>
-            
-            body{
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-size: cover;
-            background-position: center;
-            color: #020202;
-            background-image: url(images/background.jpg);
-            }
-            .table-container { 
-            background-color: rgba(255, 255, 255, 0.889);
-            margin: 40px auto; 
-            padding: 30px; 
-            max-width: 700px; 
-            border-radius: 15px; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            left: 50px; 
-            }
-            header{
-            background-color: rgb(45, 140, 140);
-            padding: 20px;
-            text-align: center;
-            border-radius: 0 0 15px 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            }
-            /* TABLE */
-            table {
-            width: 100%;
-            margin top: 20px;
-            border-color:black ;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            }
-            
-            th, td {
-            padding: 14px 16px;
-            text-align: left;
-            border-bottom: 1px solid #181818;
-            }
-            
-            th {
-            background: rgba(39, 36, 36, 0.9);
-            color: white;
-            font-size: 18px;
-            }
-            /* Main layout: content left + sidebar right */
-            
-            /* Sidebar */
-            .sidebar {
-            width: 260px;
-            background: rgb(32, 35, 35);
-            border-radius: 12px;
-            padding: 16px;
-            color: white;
-            }
-            .sidebar h2 { margin: 0 0 10px; font-size: 1.1rem;color: #e5e7eb; }
-            .sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-            .sidebar a {
-             display: block;
-            text-decoration: none;
-            color: #f7f3f3;
-            background:#496986 ;
-            border: 1px solid #bbbcc0;
-            padding: 10px 12px;
-            border-radius: 10px;
-            transition: background .15s ease, border-color .15s ease;
-            }
-            .sidebar a:hover { background: #c5c8ca; border-color: #a7a9ac; }
-            /* LEFT CONTENT AREA */
-            .content {
-                flex: 1;  
-                background-color: rgba(151, 146, 146, 0.9);
-                padding: 30px;
-                border-radius: 15px;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLS website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
 
-            }
-            .container {
-            display: flex;
-            gap: 24px;
-            align-items: flex-start;
-            padding: 20px;
-            }
-
-            
-        </style>
-
-    </head>
-    <body>
-        <header>
-            <h1>Agent Directory</h1>
-        </header>
-    <!--MAIN LAYOUT-->
-    <div class="container">
-        <!--LEFT:TABLE CONTENT-->
-        <main class="content">
-        <h2>Agent Directory</h2>
+</head>
+<body>
+    <nav class="navbar">
+       <div class="navbar__container">
+        <img src="images/Mogende loan service logo.png" alt="navbar__logo">
+        
+        <div class="navbar__toggle" id="mobile-menu">
+           <span class="bar"></span>  
+           <span class="bar"></span>  
+           <span class="bar"></span>  
+           <span class="bar"></span>  
+           <span class="bar"></span>  
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="Product.html" class="navbar__links">Products</a>
+          </li>
+          <li class="navbar__item">
+            <a href="Contact Page.html" class="navbar__links">Contacts</a>
+          </li>
+           <li class="navbar__item">
+            <a href="FAQ Page.html" class="navbar__links">FAQ</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="Application Form.html" class="button">Apply Now</a>
+          </li>
+        </ul>
+       </div>
+    </nav>
+ <!-- Hero Section -->
+  <div class="main__about">
+         <div class="container">
         <table id="agentTable">
                <tr>
                <th>Agent Name</th>
@@ -128,24 +67,39 @@
                <td>Maun</td>
                </tr>
         </table>
-        </main>
-    <!--RIGHT:SIDEBAR-->
-    <aside class="sidebar" aria-label="Main menu">
-        <h2>Menu</h2>
-             <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="Product page.html">Product Page</a></li>
-           <li><a href="Application Form.html">Application form</a></li>
-           <li><a href="About us.html">About MLS</a></li>
-           <li><a href="Contact Page.html">Contact</a></li>
-           <li><a href="FAQ Page.html">FAQ</a></li> 
-           <li><a href="table.html">Agent Directory</a></li> 
-             </ul>
-    </aside>
-    </div>
-    <!-- Bootstrap JS and dependencies --> 
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+           </div>  
+     </div>
+      <!-- Footer Section -->
+      <div class="footer__container">
+        <div class="footer__links">
+           <div class="footer__link--wrapper">
+             <div class="footer__link--items">
+                <h2>Location</h2>
+                <p>Maun-Boseja, plot 6619</p>
+                <p>Fracistown-CBD plot 2443</p>
+                <p>Gaborone, plot 1234</p>
+                <p>Tonota-Kgosing, plot 5678</p>
+                <p>Ramotswa-Disana, plot 9012</p>
+              </div> 
+              <div class="footer__link--items">
+                <h2>Social_Media</h2>
+                <p>Facebook@Mogende Loan Services</p>
+                <p>Instagram@Mogende Loan Services</p>
+                <p>Twitter@Mogende Loan Services</p>
+                <p>LinkedIn@Mogende Loan Services</p>
+                <p>YouTube@Mogende Loan Services</p>
+              </div>
+           </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap"> 
+               <p class="website__rights">MLS 2025. All rights reserved</p>
+            </div>
+        </div>
+      </div>
+      </div>
+      </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    </body>
+    <script src="app.js"></script>
+</body>
 </html>

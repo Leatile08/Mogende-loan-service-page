@@ -6,105 +6,119 @@
         <title>Contact Us-Mogende Loan Services</title>
         <!-- Bootstrap CSS --> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-        <style>
-        footer{
-           background-color: rgb(32, 35, 35);
-           position: fixed;
-           bottom: 0;
-           text-align: center;
-           left: 0;
-           right: 0;}
-        /* Contact content box */
-        .container { 
-            flex: 1;
-            background-color: rgba(255, 255, 255, 0.9);
-            margin: 40px auto; 
-            padding: 30px; 
-            max-width: 700px; 
-            border-radius: 15px; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            left: 50px; 
-        }
-        body{
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-size: cover;
-            background-position: center;
-            color: #333;
-            background-image: url(images/background.jpg);
-        }
-        header{
-            background-color:rgb(45, 140, 140) ;
-            padding: 20px;
-            text-align: center;
-            border-radius: 0 0 15px 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
-        /* Sidebar */
-        .sidebar {
-            width: 260px;
-            background: rgb(32, 35, 35);
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 16px;
-        }
-        .sidebar h2 { margin: 0 0 10px; font-size: 1.1rem;color: #e5e7eb; }
-        .sidebar ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-        .sidebar a {
-            display: block;
-            text-decoration: none;
-            color: #f7f3f3;
-            background:#496986 ;
-            border: 1px solid #bbbcc0;
-            padding: 10px 12px;
-            border-radius: 10px;
-            transition: background .15s ease, border-color .15s ease;
-        }
-        .sidebar a:hover { background: #666d75; border-color: #a7a9ac; }
-        /* MAIN FLEX LAYOUT */
-        .page-wrapper {
-        display: flex;
-        gap: 24px;
-        padding: 20px;
-        }
-        
-        /* (Optional) make it stack neatly on small screens */
-        </style>
     </head>
-    <body>
-        <header>
-            <h1>Contact Us</h1>
-        </header>
-        <!-- MAIN FLEX LAYOUT -->
-         <Div class="page-wrapper">
+    
+</html>
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLS website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+       <div class="navbar__container">
+        <img src="images/Mogende loan service logo.png" alt="navbar__logo">
+        
+        <div class="navbar__toggle" id="mobile-menu">
+           <span class="bar"></span>  
+           <span class="bar"></span>  
+           <span class="bar"></span>  
+           <span class="bar"></span>  
+           <span class="bar"></span>  
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="Product.html" class="navbar__links">Products</a>
+          </li>
+          <li class="navbar__item">
+            <a href="Contact Page.html" class="navbar__links">Contacts</a>
+          </li>
+           <li class="navbar__item">
+            <a href="FAQ Page.html" class="navbar__links">FAQ</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="Application Form.html" class="button">Apply Now</a>
+          </li>
+        </ul>
+       </div>
+    </nav>
+ <!-- Hero Section -->
+  <Div class="page-wrapper">
             <!-- LEFT: CONTACT INFO -->
              <div class="container">
             <h2>We'd love to hear from you</h2>
             <p>Whether you have questions about our loan products, need assistance with an application, or simply want to learn more, our team is here to help.</p>
             <h3>Contact Details</h3>
-            <p><strong>Phone:</strong>+267 78 394 354</p>
-            <p><strong>Email:</strong>leatilemogende@gmail.com</p>
-            <p><strong>Address:</strong>Plot 123, Tlokweng, Botswana</p>
+            
+        <table id="agentTable">
+               <tr>
+               <th>Agent Name</th>
+               <th>Contact</th>
+               <th>Branch</th>
+               </tr>
+               <tr>
+               <td>Leatile Mogende</td>
+               <td>+267 78 394 354</td>
+               <td>Gaborone</td>
+               </tr>
+               <tr>
+               <td>Maatla Francis</td>
+               <td>+267 78 582 987</td>
+               <td>Francistown</td>
+               </tr>
+               <tr>
+               <td>Neo Mogende</td>
+               <td>+267 74 728 922</td>
+               <td>Maun</td>
+               </tr>
+        </table>
+            
            </div>
-           <!--RIGHT: sidebar menu -->
-             <aside class="sidebar" aria-label="Main menu">
-              <h2>Menu</h2>
-             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="Product page.html">Product Page</a></li>
-              <li><a href="Application Form.html">Application form</a></li>
-              <li><a href="About us.html">About MLS</a></li>
-              <li><a href="Contact Page.html">Contact</a></li>
-              <li><a href="FAQ Page.html">FAQ</a></li>  
-              <li><a href="table.html">Agent Directory</a></li>
-             </ul>
-             </aside>
+           
          </Div>
-        <footer>
-            <p>&copy; 2025 Mogende Loan Services</p>
-        </footer>
-        <!-- Bootstrap JS and dependencies --> 
-         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+      <!-- Footer Section -->
+      <div class="footer__container">
+        <div class="footer__links">
+           <div class="footer__link--wrapper">
+             <div class="footer__link--items">
+                <h2>Location</h2>
+                <p>Maun-Boseja, plot 6619</p>
+                <p>Fracistown-CBD plot 2443</p>
+                <p>Gaborone, plot 1234</p>
+                <p>Tonota-Kgosing, plot 5678</p>
+                <p>Ramotswa-Disana, plot 9012</p>
+              </div> 
+              <div class="footer__link--items">
+                <h2>Social_Media</h2>
+                <p>Facebook@Mogende Loan Services</p>
+                <p>Instagram@Mogende Loan Services</p>
+                <p>Twitter@Mogende Loan Services</p>
+                <p>LinkedIn@Mogende Loan Services</p>
+                <p>YouTube@Mogende Loan Services</p>
+              </div>
+           </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap"> 
+               <p class="website__rights">MLS 2025. All rights reserved</p>
+            </div>
+        </div>
+      </div>
+      </div>
+      </div>
 
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    </body>
+    <script src="app.js"></script>
+</body>
 </html>

@@ -26,3 +26,27 @@ menu.addEventListener('click', function(){
           form.reset(); // optional: clear form
           });
           });
+
+      function activate(element, name, role) {
+
+      // Remove active class from all cards
+
+       document.querySelectorAll('.card').forEach(card => {
+       card.classList.remove('active');
+       });
+
+// Add active class to clicked card
+      element.classList.add('active');
+
+     // Update text
+        document.getElementById('name').innerText = name;
+        document.getElementById('role').innerText = role;
+
+// Update dots (simple logic)
+        const cards = Array.from(document.querySelectorAll('.card'));
+        const index = cards.indexOf(element);
+        document.querySelectorAll('.dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+
+        });
+        }      

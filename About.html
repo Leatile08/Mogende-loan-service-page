@@ -50,8 +50,34 @@
        </div>
     </nav>
  <!-- Hero Section -->
-     <div class="main__about">
+
+  <div class="main__about">
+    <div class="container__images">
+        <h1>OUR TEAM</h1>
+           <div class="carousel">
+             <div class="card" onclick="activate(this, 'John Doe', 'Co-Founder and COO')">
+                <img src="images/big short.jpg" alt="Team">
+             </div>
+             <div class="card active" onclick="activate(this, 'Mr Leatile Mogende', 'Founder and CEO')">
+                <img src="images/Media (2).jpg" alt="Team">
+             </div>
+             <div class="card" onclick="activate(this, 'Marcus Vane', 'Managing Director')">
+                <img src="images/Christian-Bale-in-The-Big-Short.webp" alt="Team">
+             </div>
+           </div>
+           <div id="details">
+              <div class="member-name" id="name">Emily Kim</div>
+              <div class="member-role" id="role">FOUNDER</div>
+           </div>
+
+      <div class="dots">
+         <div class="dot"></div>
+         <div class="dot active"></div>
+         <div class="dot"></div>
+      </div>
+    </div>
          <div class="container">
+          
              <h2>Our Story</h2>
              <p>Mogende Loan Services was founded with a simple vision: to make financing accessible, transparent, and supportive for individuals, students, and businesses. Over the years, we’ve grown from a small local provider into a trusted partner for clients across Botswana and beyond. Our journey has been shaped by listening to our customers, understanding their challenges, and tailoring solutions that empower them to achieve their goals.</p>
              <h2>Our Mission</h2>
@@ -71,48 +97,26 @@
            <div class="footer__link--wrapper">
              <div class="footer__link--items">
                 <h2>Location</h2>
-                <a href="/">Maun-Boseja, plot 6619</a>
-                <a href="/">Fracistown-CBD plot 2443</a>
-                <a href="/">Gaborone, plot 1234</a>
-                <a href="/">Tonota-Kgosing, plot 5678</a>
-                <a href="/">Ramotswa-Disana, plot 9012</a>
+                <p>Maun-Boseja, plot 6619</p>
+                <p>Fracistown-CBD plot 2443</p>
+                <p>Gaborone, plot 1234</p>
+                <p>Tonota-Kgosing, plot 5678</p>
+                <p>Ramotswa-Disana, plot 9012</p>
               </div> 
               <div class="footer__link--items">
                 <h2>Social_Media</h2>
-                <a href="/" target="_blank">Facebook@Mogende Loan Services</a>
-                <a href="/" target="_blank">Instagram@Mogende Loan Services</a>
-                <a href="/" target="_blank">Twitter@Mogende Loan Services</a>
-                <a href="/" target="_blank">LinkedIn@Mogende Loan Services</a>
-                <a href="/" target="_blank">YouTube@Mogende Loan Services</a>
+                <p>Facebook@Mogende Loan Services</p>
+                <p>Instagram@Mogende Loan Services</p>
+                <p>Twitter@Mogende Loan Services</p>
+                <p>LinkedIn@Mogende Loan Services</p>
+                <p>YouTube@Mogende Loan Services</p>
               </div>
            </div>
         </div>
-        <div class="social__media">
-            <div class="social__media--wrap">
-               <div class="footer__logo">
-                <a href="/" id="footer__logo"><i class="fas fa-gem"></i>MLS</a>
-               </div> 
-               <p class="website__rights">MLS 2025. All rights reserved</p>
-               <div class="social__icons">
-                <a href="/" class="social__icon--link" target="_blank">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="/" class="social__icon--link" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="/" class="social__icon--link" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="/" class="social__icon--link" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="/" class="social__icon--link" target="_blank">
-                  <i class="fab fa-facebook"></i>
-                </a>
-               </div>
+        <div class="social__media--wrap"> 
+               <p>&copy; 2025 Mogende Loan Services</p>
             </div>
         </div>
-      </div>
 
     <script src="app.js"></script>
 </body>
