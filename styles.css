@@ -646,7 +646,6 @@
      background-size: cover;
      position: relative;
      
-     
         
 }
 
@@ -658,7 +657,8 @@
             background-position: center;
             color: #333;
             background-image: url(images/money.jpg);
-            background-size:cover;} 
+            background-size:cover;
+        } 
           
          
         /* --- Nice form layout --- */
@@ -776,7 +776,6 @@
             color: white;
             font-size: 18px;
             }
-
 
 
 
@@ -975,6 +974,14 @@ flex: 3;
 background: white;
 transform: scale(1.05);
 
+}
+
+
+@media (max-width: 768px) {
+  .panel {
+    position: static;
+    height: auto;
+  }
 }
 
 
