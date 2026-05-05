@@ -979,8 +979,7 @@ transform: scale(1.05);
 
 @media (max-width: 768px) {
   .panel {
-    position: static;
-    height: auto;
+    margin-top: 0;
   }
 }
 
