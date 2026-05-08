@@ -13,11 +13,10 @@ menu.addEventListener('click', function(){
            form.addEventListener("submit", function(event) {
            event.preventDefault();
 
-           // Show toast (fade in)
+       
            toast.style.visibility = "visible";
            toast.style.opacity = "1";
 
-          // Hide after 3 seconds (fade out)
           setTimeout(() => {
           toast.style.opacity = "0";
           setTimeout(() => { toast.style.visibility = "hidden"; }, 500);
@@ -29,16 +28,16 @@ menu.addEventListener('click', function(){
 
       function activate(element, name, role) {
 
-      // Remove active class from all cards
+     
 
        document.querySelectorAll('.card').forEach(card => {
        card.classList.remove('active');
        });
 
-// Add active class to clicked card
+
       element.classList.add('active');
 
-     // Update text
+   
         document.getElementById('name').innerText = name;
         document.getElementById('role').innerText = role;
 
