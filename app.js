@@ -39,13 +39,25 @@ menu.addEventListener('click', function(){
 
    
         document.getElementById('name').innerText = name;
-        document.getElementById('role').innerText = role;
+        document.getElementById('role').innerText = role; 
+      }
 
-// Update dots (simple logic)
-        const cards = Array.from(document.querySelectorAll('.card'));
-        const index = cards.indexOf(element);
-        document.querySelectorAll('.dot').forEach((dot, i) => {
-        dot.classList.toggle('active', i === index);
-
-        });
-        }      
+      document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('.navbar__links');
+        // Get the current filename and decode things like %20 back into spaces
+        // We also lowercase everything to prevent "About.html" vs "about.html" issues
+        const currentPath = decodeURI(window.location.pathname).toLowerCase();
+        console.log("System Check: You are currently on ->", currentPath);
+        navLinks.forEach(link => {
+        // Get the link's destination path
+        const linkPath = decodeURI(link.pathname).toLowerCase();
+        // Check if the current URL ends with this link's path
+        // This handles "index.html" vs "/" automatically
+        if (currentPath.endsWith(linkPath) || (currentPath === "/" && linkPath.endsWith("index.html"))) {
+        console.log(`MATCH! Highlighting: ${link.textContent}`);
+        link.classList.add('is-active');
+        } else {
+        link.classList.remove('is-active');
+       }
+   });
+});
