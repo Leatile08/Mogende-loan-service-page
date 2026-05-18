@@ -188,9 +188,9 @@ pointer-events: none;
 
     #mobile-menu {
         position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
     }
 
     .navbar__btn {
