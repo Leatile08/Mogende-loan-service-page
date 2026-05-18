@@ -147,9 +147,10 @@ pointer-events: none;
         position: absolute;
         top: -1000px;
         opacity: 0;
-        transition: all 0.5 ease;
+        transition: all 0.5s ease;
         height: 50vh;
         z-index: 99;
+        left: 0;
     }
 
     .navbar__menu.active {
@@ -373,15 +374,7 @@ pointer-events: none;
         margin: 2.5rem 0;
     }
 
-    .main__container {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
-    }
+   
 }
 
 /* Services Section CSS */
